@@ -1,6 +1,6 @@
 #  RAG-Based Semantic Quote Retrieval System
 
-This project is a **Retrieval-Augmented Generation (RAG)** pipeline that allows users to retrieve and generate quotes based on semantic queries. It combines **fine-tuned sentence embeddings**, **FAISS vector search**, and **LLM-based generation** via OpenAI to build an intelligent quote search system.
+This project is a **Retrieval-Augmented Generation (RAG)** pipeline that enables users to retrieve meaningful quotes based on semantic queries. The system uses a **fine-tuned BGE encoder model for embedding**, **FAISS for dense retrieval**, and a **FLAN-T5 model** for structured answer generation — all deployed through a user-friendly **Streamlit web app**.
 
 ---
 
