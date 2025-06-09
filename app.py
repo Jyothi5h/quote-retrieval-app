@@ -6,10 +6,10 @@ import json
 from sentence_transformers import SentenceTransformer
 
 # Load model and data
-model = SentenceTransformer(r"C:\Users\ashit\Downloads\Resume\fine_tuned_bge_quote_model")
-df = pd.read_csv(r"C:\Users\ashit\Downloads\Resume\quote_metadata.csv")
+model = SentenceTransformer("fine_tuned_bge_quote_model")
+df = pd.read_csv("quote_metadata.csv")
 corpus = df['quote'].tolist()
-index = faiss.read_index(r"C:\Users\ashit\Downloads\Resume\quotes_index.faiss")
+index = faiss.read_index("quotes_index.faiss")
 
 # UI
 st.title("🧠 Semantic Quote Search (RAG)")
