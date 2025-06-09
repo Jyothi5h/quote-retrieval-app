@@ -7,7 +7,6 @@ import json
 from sentence_transformers import SentenceTransformer
 
 # Load model and data
-from sentence_transformers import SentenceTransformer
 model_path = os.path.join(os.path.dirname(__file__), "fine_tuned_bge_quote_model")
 model = SentenceTransformer(model_path)
 df = pd.read_csv("quote_metadata.csv")
