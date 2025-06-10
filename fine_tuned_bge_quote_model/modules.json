@@ -2,12 +2,13 @@
   {
     "idx": 0,
     "name": "0_Transformer",
-    "type": "Transformer"
+    "type": "sentence_transformers.models.Transformer.Transformer"
   },
   {
     "idx": 1,
     "name": "1_Pooling",
-    "type": "Pooling"
+    "type": "sentence_transformers.models.Pooling.Pooling"
   }
 ]
+
 
