@@ -7,7 +7,8 @@ import json
 from sentence_transformers import SentenceTransformer
 
 # Load model and data
-model = SentenceTransformer("fine_tuned_bge_quote_model")
+model_path = os.path.join(os.path.dirname(__file__), "fine_tuned_bge_quote_model")
+model = SentenceTransformer(model_path)
 df = pd.read_csv("quote_metadata.csv")
 corpus = df['quote'].tolist()
 index = faiss.read_index("quotes_index.faiss")
