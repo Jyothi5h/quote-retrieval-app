@@ -2,7 +2,7 @@
   {
     "idx": 0,
     "name": "0_Transformer",
-    "path": "0_Pooling",
+    "path": "0_Transformer",
     "type": "sentence_transformers.models.Transformer.Transformer"
   },
   {
